@@ -117,9 +117,9 @@ function Index() {
               alt="Ilustración de una mano robótica de IA sosteniendo una balanza de la justicia con detalles de circuitos"
               width={1024}
               height={1024}
-              className="mx-auto mb-6 h-28 w-auto opacity-90 sm:h-36"
+              className="mx-auto mb-6 h-36 w-auto opacity-90 sm:h-48"
             />
-            <h1 className="font-script text-6xl font-bold italic leading-[1.05] text-gold-gradient sm:text-8xl lg:text-9xl">
+            <h1 className="font-script text-5xl font-bold italic leading-[1.05] text-gold-gradient sm:text-7xl lg:text-8xl">
               Noelia Orsini
             </h1>
             <p className="mt-6 font-display text-lg text-teal sm:text-2xl">
@@ -141,13 +141,13 @@ function Index() {
               </a>
               <a
                 href="#certificaciones"
-                className="rounded-full border border-gold/60 px-7 py-3 text-sm font-semibold text-gold transition-colors hover:bg-gold/10"
+                className="rounded-full bg-linear-to-r from-gold to-teal px-7 py-3 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
               >
                 Certificaciones
               </a>
               <a
                 href="#contacto"
-                className="rounded-full border border-border px-7 py-3 text-sm font-semibold transition-colors hover:border-teal hover:text-teal"
+                className="rounded-full bg-linear-to-r from-gold to-teal px-7 py-3 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
               >
                 Conectemos
               </a>
@@ -189,7 +189,7 @@ function Index() {
                   { k: "+20", v: "años de ejercicio profesional como abogada" },
                   { k: "4", v: "lenguajes: Java, Python, C# y JavaScript" },
                   { k: "80%", v: "de reducción del análisis legal preliminar con IA supervisada" },
-                  { k: "9", v: "proyectos publicados en GitHub" },
+                  { k: "9+", v: "proyectos publicados en GitHub" },
                 ].map((i) => (
                   <li key={i.k} className="card-elegant p-6">
                     <p className="font-display text-3xl font-bold text-gradient">{i.k}</p>
