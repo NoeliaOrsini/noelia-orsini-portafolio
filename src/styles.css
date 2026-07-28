@@ -150,5 +150,47 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: var(--font-body);
   }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+  }
+}
+
+@utility text-gradient {
+  background-image: var(--gradient-hero);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility card-elegant {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+  &:hover {
+    transform: translateY(-4px);
+    border-color: color-mix(in oklab, var(--teal) 45%, transparent);
+    box-shadow: var(--shadow-elegant);
+  }
+}
+
+@keyframes rise-in {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@utility animate-rise {
+  animation: rise-in 0.7s ease-out both;
+}
+
+@keyframes splash-pulse {
+  0%, 100% { opacity: 0.85; letter-spacing: 0.2em; }
+  50% { opacity: 1; letter-spacing: 0.3em; }
+}
+
+@utility animate-splash {
+  animation: splash-pulse 1.6s ease-in-out infinite;
 }
