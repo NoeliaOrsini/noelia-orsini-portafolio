@@ -12,7 +12,7 @@ export const proyectos = [
     titulo: "Agente de Compliance Legal — Auditoría de TyC (Letra Chica)",
     techs: ["n8n", "Gemini", "SerpApi", "Gmail", "GDPR"],
     problema:
-      "Revisar manualmente Términos y Condiciones frente a la Ley de Protección de Datos Personales y el GDPR es lento y expone a las empresas a riesgos legales.",
+      "Del lado del usuario, casi nadie lee los Términos y Condiciones: se hace clic en \"Aceptar\" sin dimensionar qué datos se ceden. Del lado de la empresa, revisar esos textos manualmente frente a la Ley de Protección de Datos Personales y el GDPR es lento y la expone a sanciones y riesgos legales.",
     solucion:
       "Flujo orquestado en n8n con IA que detecta cláusulas abusivas y envía informes automáticos por email para validación humana. Un esquema Human-in-the-Loop que reduce un 80% el tiempo de análisis preliminar sin perder la supervisión profesional.",
     link: "https://github.com/NoeliaOrsini/ai-terms-privacy-analyzer-n8n",
@@ -46,11 +46,19 @@ export const proyectos = [
   },
   {
     titulo: "Proyecto SynthData — Análisis de datos",
-    techs: ["Python", "SQL", "Looker Studio", "Google Sheets", "BI"],
+    techs: [
+      "Python",
+      "Pandas",
+      "NumPy",
+      "Plotly",
+      "Matplotlib",
+      "Seaborn",
+      "Google Colab / Jupyter Notebook",
+    ],
     problema:
       "Los datos crudos de e-commerce llegan incompletos e inconsistentes, impidiendo decisiones de negocio confiables.",
     solucion:
-      "Proceso completo de limpieza, preparación e integración de datos, con análisis exploratorio y visualización en Google Sheets y Looker Studio para comunicar hallazgos al negocio.",
+      "Enfoque analítico sustentado en Python que limpia, prepara e integra los datos para: evaluar la consistencia de las operaciones, identificar patrones estacionales, auditar la correlación estadística entre variables y facilitar decisiones ejecutivas mediante visualización interactiva.",
     link: "https://github.com/NoeliaOrsini/synthdata-data-analytics",
   },
   {
@@ -153,5 +161,5 @@ export const certificaciones = [
   },
 ];
 
-export const LINKEDIN_URL = "https://www.linkedin.com/in/noelia-orsini";
+export const LINKEDIN_URL = "https://www.linkedin.com/in/noelia-orsini/";
 export const GITHUB_URL = "https://github.com/NoeliaOrsini";

@@ -63,6 +63,7 @@
   --color-teal: var(--teal);
   --font-display: var(--font-display);
   --font-body: var(--font-body);
+  --font-script: var(--font-script);
 }
 
 :root {
@@ -92,6 +93,7 @@
   --shadow-elegant: 0 24px 60px -30px oklch(0.78 0.1 190 / 40%);
   --font-display: "Space Grotesk", sans-serif;
   --font-body: "DM Sans", sans-serif;
+  --font-script: "Cormorant Garamond", Georgia, serif;
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -186,11 +188,14 @@
   animation: rise-in 0.7s ease-out both;
 }
 
-@keyframes splash-pulse {
-  0%, 100% { opacity: 0.85; letter-spacing: 0.2em; }
-  50% { opacity: 1; letter-spacing: 0.3em; }
-}
-
-@utility animate-splash {
-  animation: splash-pulse 1.6s ease-in-out infinite;
+@utility text-gold-gradient {
+  background-image: linear-gradient(
+    100deg,
+    color-mix(in oklab, var(--gold) 70%, white),
+    var(--gold),
+    color-mix(in oklab, var(--gold) 75%, black)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
