@@ -186,10 +186,10 @@ function Index() {
               </div>
               <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
                 {[
-                  { k: "9+", v: "proyectos publicados en GitHub" },
+                  { k: "+20", v: "años de ejercicio profesional como abogada" },
                   { k: "4", v: "lenguajes: Java, Python, C# y JavaScript" },
                   { k: "80%", v: "de reducción del análisis legal preliminar con IA supervisada" },
-                  { k: "20+", v: "años de ejercicio profesional como abogada" },
+                  { k: "9+", v: "proyectos publicados en GitHub" },
                 ].map((i) => (
                   <li key={i.k} className="card-elegant p-6">
                     <p className="font-display text-3xl font-bold text-gradient">{i.k}</p>
