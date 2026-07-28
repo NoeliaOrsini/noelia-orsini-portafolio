@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Github, Linkedin, ArrowUpRight, Menu, X } from "lucide-react";
-import { SplashScreen } from "@/components/SplashScreen";
+import iaBalanza from "@/assets/ia-balanza.png";
 import {
   proyectos,
   hardSkills,
@@ -99,7 +99,6 @@ function Titulo({ children, kicker }: { children: string; kicker: string }) {
 function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground">
-      <SplashScreen />
       <Nav />
 
       <main>
@@ -112,26 +111,39 @@ function Index() {
             className="pointer-events-none absolute -top-40 -right-32 size-[34rem] rounded-full opacity-20 blur-3xl"
             style={{ background: "var(--gradient-hero)" }}
           />
-          <div className="mx-auto max-w-6xl animate-rise">
-            <p className="mb-6 inline-block rounded-full border border-border px-4 py-1.5 text-xs uppercase tracking-[0.2em] text-muted-foreground">
-              Human-in-the-Loop · IA responsable
-            </p>
-            <h1 className="font-display text-5xl font-bold leading-[1.05] sm:text-7xl lg:text-8xl">
-              Noelia <span className="text-gradient">Orsini</span>
+          <div className="mx-auto max-w-6xl animate-rise text-center">
+            <img
+              src={iaBalanza}
+              alt="Ilustración de una mano robótica de IA sosteniendo una balanza de la justicia con detalles de circuitos"
+              width={1024}
+              height={1024}
+              className="mx-auto mb-6 h-28 w-auto opacity-90 sm:h-36"
+            />
+            <h1 className="font-script text-6xl font-bold italic leading-[1.05] text-gold-gradient sm:text-8xl lg:text-9xl">
+              Noelia Orsini
             </h1>
             <p className="mt-6 font-display text-lg text-teal sm:text-2xl">
               Desarrolladora Back-End | Abogada | Consultora Psicológica
             </p>
-            <p className="mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground sm:text-lg">
+            <p className="mt-4 text-xs uppercase tracking-[0.25em] text-muted-foreground">
+              Human-in-the-Loop · IA responsable
+            </p>
+            <p className="mx-auto mt-8 max-w-3xl text-base leading-relaxed text-muted-foreground sm:text-lg">
               Uniendo la seguridad jurídica, la arquitectura de software y la comprensión de los
               procesos humanos para impulsar la transformación digital.
             </p>
-            <div className="mt-10 flex flex-wrap gap-4">
+            <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
               <a
                 href="#proyectos"
                 className="rounded-full bg-linear-to-r from-gold to-teal px-7 py-3 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
               >
                 Ver proyectos
+              </a>
+              <a
+                href="#certificaciones"
+                className="rounded-full border border-gold/60 px-7 py-3 text-sm font-semibold text-gold transition-colors hover:bg-gold/10"
+              >
+                Certificaciones
               </a>
               <a
                 href="#contacto"
@@ -156,7 +168,8 @@ function Index() {
                   orquestación de agentes con LangChain y LangGraph.
                 </p>
                 <p>
-                  Antes —y en paralelo— construí más de <strong className="text-foreground">20 años de trayectoria como abogada</strong>{" "}
+                  Durante más de 20 años construí una sólida{" "}
+                  <strong className="text-foreground">trayectoria como abogada</strong>{" "}
                   (UBA, especialización en Derecho Empresarial), asesorando a empresas y particulares
                   en análisis jurídico, gestión de riesgos, privacidad y protección de datos. Mi
                   formación como <strong className="text-foreground">Consultora Psicológica (Counselor)</strong>{" "}
