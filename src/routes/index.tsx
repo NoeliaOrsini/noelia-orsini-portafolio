@@ -133,22 +133,13 @@ function Index() {
               procesos humanos para impulsar la transformación digital.
             </p>
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-              <a
-                href="#proyectos"
-                className="rounded-full bg-linear-to-r from-gold to-teal px-7 py-3 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
-              >
+              <a href="#proyectos" className="btn-gold">
                 Ver proyectos
               </a>
-              <a
-                href="#certificaciones"
-                className="rounded-full bg-linear-to-r from-gold to-teal px-7 py-3 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
-              >
+              <a href="#certificaciones" className="btn-gold">
                 Certificaciones
               </a>
-              <a
-                href="#contacto"
-                className="rounded-full bg-linear-to-r from-gold to-teal px-7 py-3 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
-              >
+              <a href="#contacto" className="btn-gold">
                 Conectemos
               </a>
             </div>
@@ -185,12 +176,12 @@ function Index() {
                 </p>
               </div>
               <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-1">
-                {[
-                  { k: "+20", v: "años de ejercicio profesional como abogada" },
-                  { k: "4", v: "lenguajes: Java, Python, C# y JavaScript" },
-                  { k: "80%", v: "de reducción del análisis legal preliminar con IA supervisada" },
-                  { k: "9+", v: "proyectos publicados en GitHub" },
-                ].map((i) => (
+                  {[
+                    { k: "+20", v: "años de ejercicio profesional como abogada" },
+                    { k: "4", v: "lenguajes: Java, Python, C# y JavaScript" },
+                    { k: "80%", v: "de reducción del análisis legal preliminar con IA supervisada" },
+                    { k: "26+", v: "proyectos publicados en GitHub" },
+                  ].map((i) => (
                   <li key={i.k} className="card-elegant p-6">
                     <p className="font-display text-3xl font-bold text-gradient">{i.k}</p>
                     <p className="mt-2 text-sm text-muted-foreground">{i.v}</p>
@@ -315,7 +306,7 @@ function Index() {
                 href={LINKEDIN_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full bg-linear-to-r from-gold to-teal px-7 py-3 text-sm font-semibold text-primary-foreground transition-opacity hover:opacity-90"
+                className="btn-outline"
               >
                 <Linkedin className="size-4" /> LinkedIn
               </a>
@@ -323,7 +314,7 @@ function Index() {
                 href={GITHUB_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-full border border-border px-7 py-3 text-sm font-semibold transition-colors hover:border-teal hover:text-teal"
+                className="btn-outline"
               >
                 <Github className="size-4" /> GitHub
               </a>
