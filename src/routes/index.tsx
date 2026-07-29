@@ -164,7 +164,9 @@ function Index() {
 
         <section id="sobre-mi" className="border-t border-border/60 px-6 py-24 sm:px-8 lg:px-12">
           <div className="mx-auto max-w-6xl">
-            <Titulo kicker="Perfil híbrido">Sobre mí</Titulo>
+            <Titulo kicker="Perfil híbrido" centered>
+              Sobre mí
+            </Titulo>
             <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr]">
               <div className="mx-auto max-w-3xl space-y-5 px-2 text-center text-base leading-relaxed text-muted-foreground sm:px-4 lg:px-8">
                 <p>
