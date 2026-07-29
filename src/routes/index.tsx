@@ -3,7 +3,6 @@ import { useState } from "react";
 import { Github, Linkedin, ArrowUpRight, Menu, X } from "lucide-react";
 import iaBalanza from "@/assets/ia-balanza.png";
 import { SplashScreen } from "@/components/SplashScreen";
-import { cn } from "@/lib/utils";
 import {
   proyectos,
   hardSkills,
@@ -88,25 +87,12 @@ function Nav() {
   );
 }
 
-function Titulo({
-  children,
-  kicker,
-  centered = false,
-}: {
-  children: string;
-  kicker: string;
-  centered?: boolean;
-}) {
+function Titulo({ children, kicker }: { children: string; kicker: string }) {
   return (
-    <div className={cn("mb-12", centered && "text-center")}>
+    <div className="mb-12">
       <p className="mb-3 text-xs font-medium uppercase tracking-[0.3em] text-gold">{kicker}</p>
       <h2 className="font-display text-3xl font-bold sm:text-4xl">{children}</h2>
-      <div
-        className={cn(
-          "mt-4 h-px w-24 bg-linear-to-r from-gold to-teal",
-          centered && "mx-auto"
-        )}
-      />
+      <div className="mt-4 h-px w-24 bg-linear-to-r from-gold to-teal" />
     </div>
   );
 }
@@ -162,13 +148,11 @@ function Index() {
           </div>
         </section>
 
-        <section id="sobre-mi" className="border-t border-border/60 px-6 py-24 sm:px-8 lg:px-12">
+        <section id="sobre-mi" className="border-t border-border/60 px-5 py-24">
           <div className="mx-auto max-w-6xl">
-            <Titulo kicker="Perfil híbrido" centered>
-              Sobre mí
-            </Titulo>
+            <Titulo kicker="Perfil híbrido">Sobre mí</Titulo>
             <div className="grid gap-10 lg:grid-cols-[1.4fr_1fr]">
-              <div className="mx-auto max-w-3xl space-y-5 px-2 text-center text-base leading-relaxed text-muted-foreground sm:px-4 lg:px-8">
+              <div className="space-y-5 text-base leading-relaxed text-muted-foreground">
                 <p>
                   Soy desarrolladora Back-End con formación en <strong className="text-foreground">JavaScript, Python, Java y C#</strong>,
                   con experiencia en aplicaciones educativas, análisis de datos y automatizaciones
