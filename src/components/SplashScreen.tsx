@@ -29,7 +29,7 @@ export function SplashScreen() {
           alt=""
           width={1024}
           height={1024}
-          className="splash-logo-sway h-56 w-auto opacity-90 sm:h-72"
+          className="splash-logo-sway h-64 w-auto opacity-90 sm:h-80"
         />
       </div>
     </div>
