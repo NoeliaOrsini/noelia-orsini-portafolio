@@ -87,12 +87,25 @@ function Nav() {
   );
 }
 
-function Titulo({ children, kicker }: { children: string; kicker: string }) {
+function Titulo({
+  children,
+  kicker,
+  centered = false,
+}: {
+  children: string;
+  kicker: string;
+  centered?: boolean;
+}) {
   return (
-    <div className="mb-12">
+    <div className={cn("mb-12", centered && "text-center")}>
       <p className="mb-3 text-xs font-medium uppercase tracking-[0.3em] text-gold">{kicker}</p>
       <h2 className="font-display text-3xl font-bold sm:text-4xl">{children}</h2>
-      <div className="mt-4 h-px w-24 bg-linear-to-r from-gold to-teal" />
+      <div
+        className={cn(
+          "mt-4 h-px w-24 bg-linear-to-r from-gold to-teal",
+          centered && "mx-auto"
+        )}
+      />
     </div>
   );
 }
