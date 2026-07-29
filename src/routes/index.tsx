@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Github, Linkedin, ArrowUpRight, Menu, X } from "lucide-react";
 import iaBalanza from "@/assets/ia-balanza.png";
 import { SplashScreen } from "@/components/SplashScreen";
+import { cn } from "@/lib/utils";
 import {
   proyectos,
   hardSkills,
