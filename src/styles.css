@@ -245,3 +245,36 @@
   background-clip: text;
   color: transparent;
 }
+
+@keyframes splash-logo-in {
+  from { opacity: 0; transform: scale(0.94); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes splash-sway {
+  0% { transform: rotate(0deg); }
+  18% { transform: rotate(-3.2deg); }
+  38% { transform: rotate(2.4deg); }
+  58% { transform: rotate(-1.4deg); }
+  78% { transform: rotate(0.7deg); }
+  90% { transform: rotate(-0.25deg); }
+  100% { transform: rotate(0deg); }
+}
+
+@keyframes splash-out {
+  from { opacity: 1; visibility: visible; }
+  to { opacity: 0; visibility: hidden; }
+}
+
+@utility splash-logo-wrap {
+  animation: splash-logo-in 0.9s ease-out both;
+}
+
+@utility splash-logo-sway {
+  transform-origin: 50% 12%;
+  animation: splash-sway 1.6s 1s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .splash-logo-wrap, .splash-logo-sway { animation: none !important; }
+}
