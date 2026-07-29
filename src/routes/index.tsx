@@ -44,7 +44,7 @@ function Nav() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-border/70 bg-background/85 backdrop-blur-md">
       <nav className="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-4 md:flex md:justify-between">
         <a href="#inicio" className="min-w-0 truncate font-display text-lg font-bold tracking-widest">
-          <span className="text-gradient">NO</span>
+          <span className="text-gradient"></span>
           <span className="ml-2 text-sm font-normal tracking-normal text-muted-foreground">
             Noelia Orsini
           </span>
