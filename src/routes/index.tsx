@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Github, Linkedin, ArrowUpRight, Menu, X } from "lucide-react";
 import iaBalanza from "@/assets/ia-balanza.png";
+import { SplashScreen } from "@/components/SplashScreen";
 import {
   proyectos,
   hardSkills,
@@ -99,6 +100,7 @@ function Titulo({ children, kicker }: { children: string; kicker: string }) {
 function Index() {
   return (
     <div className="min-h-screen bg-background text-foreground">
+      <SplashScreen />
       <Nav />
 
       <main>
