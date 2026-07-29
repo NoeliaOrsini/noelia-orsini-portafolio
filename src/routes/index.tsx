@@ -119,7 +119,7 @@ function Index() {
               alt="Ilustración de una mano robótica de IA sosteniendo una balanza de la justicia con detalles de circuitos"
               width={1024}
               height={1024}
-              className="mx-auto mb-6 h-36 w-auto opacity-90 sm:h-48"
+              className="mx-auto mb-6 h-44 w-auto opacity-90 sm:h-56"
             />
             <h1 className="font-script text-5xl font-bold italic leading-[1.05] text-gold-gradient sm:text-7xl lg:text-8xl">
               Noelia Orsini
