@@ -19,11 +19,12 @@ export const proyectos = [
   },
   {
     titulo: 'Asistente "Nova" — Arquitectura RAG para Recursos Humanos',
-    techs: ["Python", "RAG", "Human-in-the-Loop", "PDF"],
+    techs: ["Python", "RAG", "Human-in-the-Loop", "PDF", "SerApi"],
     problema:
       "La elaboración de informes de RR.HH. cruzando datos internos (sueldos, desempeño, licencias) con normativas legales es un proceso manual y lento, lo que dificulta la trazabilidad y el control seguro de la información.",
     solucion:
-      "Asistente RAG que analiza datos internos anonimizados con ID y utiliza búsquedas web (SerApi) para legislación y jurisprudencia. Determina automáticamente la fuente, redacta el informe para revisión humana (Human-in-the-Loop) y, tras su aprobación, exporta el PDF con total trazabilidad.",
+      "Asistente RAG que analiza datos internos anonimizados con ID (evalúa sueldos y sus variaciones, resume desempeño por sector, identifica perfiles destacados y calcula vacaciones pendientes) y utiliza búsquedas web (SerApi) para legislación y jurisprudencia. Determina automáticamente la fuente, redacta el informe para revisión humana (Human-in-the-Loop) y, tras su aprobación, exporta el PDF con total trazabilidad, reduciendo el tiempo de elaboración de estos informes en un 80%.",
+
     link: "https://github.com/NoeliaOrsini/nova-agente-rag-human-in-the-loop",
   },
   {
