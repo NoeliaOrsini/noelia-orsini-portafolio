@@ -21,9 +21,9 @@ export const proyectos = [
     titulo: 'Asistente "Nova" — Arquitectura RAG para Recursos Humanos',
     techs: ["Python", "RAG", "Human-in-the-Loop", "PDF"],
     problema:
-      "La generación de dictámenes técnicos de RR.HH. se veía afectada por la latencia y los límites de cuota de la API, generando incertidumbre y errores de duplicación.",
+      "La elaboración de informes de RR.HH. cruzando datos internos (sueldos, desempeño, licencias) con normativas legales es un proceso manual y lento, lo que dificulta la trazabilidad y el control seguro de la información.",
     solucion:
-      "Asistente con arquitectura RAG e interfaz en Python con gestión proactiva de estados y manejo de excepciones en tiempo real, con un proceso de aprobación y descarga de PDF blindado contra duplicaciones.",
+      "Asistente RAG que analiza datos internos anonimizados con ID y utiliza búsquedas web (SerApi) para legislación y jurisprudencia. Determina automáticamente la fuente, redacta el informe para revisión humana (Human-in-the-Loop) y, tras su aprobación, exporta el PDF con total trazabilidad.",
     link: "https://github.com/NoeliaOrsini/nova-agente-rag-human-in-the-loop",
   },
   {
