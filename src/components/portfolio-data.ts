@@ -33,7 +33,8 @@ export const proyectos = [
     problema:
       "La investigación jurídica y ética asistida por IA requiere trazabilidad de fuentes y control de sesgos que un chatbot genérico no ofrece.",
     solucion:
-      "Arquitectura multiagente basada en grafos que orquesta flujos legales complejos, gestiona estados persistentes y mitiga sesgos, combinando fuentes jurídicas y académicas.",
+      "Arquitectura multiagente basada en grafos que orquesta flujos legales complejos, gestiona estados persistentes y mitiga sesgos, combinando fuentes jurídicas (Tavily) y científicas (arXiv) en una interfaz Gradio. El sistema genera un informe consolidado con formato profesional que identifica las fuentes legales consultadas, las fuentes científicas utilizadas, la herramienta responsable de cada hallazgo, su fundamentación jurídica, su fundamentación técnica y un dictamen ético final. Esta trazabilidad completa facilita la transparencia y la explicabilidad de las auditorías éticas y regulatorias.",
+
     link: "https://github.com/NoeliaOrsini/jurisMind_AI_MultiAgente",
   },
   {
