@@ -5,7 +5,7 @@ export const proyectos = [
     problema:
       "Las víctimas de ciberdelitos y ataques informáticos no saben qué pasos urgentes seguir ni cómo priorizar la respuesta ante un incidente.",
     solucion:
-      "Agente autónomo que orquesta flujos complejos con LangChain y LangGraph, integra búsqueda en tiempo real con Tavily y ofrece una interfaz interactiva en Gradio, desplegada en Render y Railway para asegurar disponibilidad y escalabilidad.",
+      "Agente autónomo que orquesta flujos complejos con LangChain y LangGraph. Combina una arquitectura RAG respaldada por protocolos de ciberseguridad y recomendaciones para la ciudadanía basadas en fuentes oficiales, con búsqueda web en tiempo real a través de Tavily. Ofrece una interfaz interactiva en Gradio y está desplegado en Render y Railway para garantizar alta disponibilidad.",
     link: "https://github.com/NoeliaOrsini/conred-agente-triage",
   },
   {
