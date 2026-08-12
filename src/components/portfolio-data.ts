@@ -145,6 +145,11 @@ export const certificaciones = [
     detalle: "Diseño y despliegue de agentes de IA en el ecosistema Oracle (septiembre 2025).",
   },
   {
+    entidad: "Oracle University",
+    titulo: "Oracle Cloud Infrastructure Certified AI Foundations Associate 2026",
+    detalle: "Certificación en fundamentos de IA en Oracle Cloud Infrastructure (agosto 2026).",
+  },
+  {
     entidad: "Google Skills",
     titulo: "Generative AI Leader",
     detalle:
