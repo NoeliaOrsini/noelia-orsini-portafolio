@@ -156,6 +156,11 @@ export const certificaciones = [
       "Badge de Google Cloud | Capacita+ en liderazgo de IA generativa (diciembre 2025), junto a otros badges del perfil Google Skills.",
   },
   {
+    entidad: "Google Skills",
+    titulo: "Google Workspace - Talento Tech",
+    detalle: "Certificación en Google Workspace por Talento Tech (febrero 2026).",
+  },
+  {
     entidad: "Oracle Next Education (ONE) — Alura Latam",
     titulo: "Back-End Developer Jr — Graduada G7",
     detalle: "Programa ONE Generación 7, especialización Back-End (jun 2024 - ago 2025).",
