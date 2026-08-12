@@ -90,6 +90,15 @@ export const proyectos = [
       "API REST con operaciones CRUD completas sobre MySQL, seguridad y autenticación mediante Spring Security y JWT, validada con Postman.",
     link: "https://github.com/NoeliaOrsini/foro-hub",
   },
+  {
+    titulo: "Semáforo de la Rutina Diaria",
+    techs: ["HTML5", "CSS3", "JavaScript (ES6+)", "LocalStorage", "Google Fonts"],
+    problema:
+      "En el día a día nos movemos sin tomar consciencia de cuidarnos o de si cubrimos las necesidades básicas que sostienen nuestro bienestar integral.",
+    solucion:
+      "Aplicación web interactiva de autoconocimiento y reflexión diaria que evalúa 7 áreas del bienestar (emociones, actividad física, descanso, trabajo, estudio, esparcimiento y alimentación). Un semáforo dinámico pondera prioridades vitales, entrega sugerencias personalizadas, recetas prácticas y un consejo destacado del día, y permite guardar el historial en localStorage o exportarlo a CSV.",
+    link: "https://github.com/NoeliaOrsini/semaforo-rutina",
+  },
 ];
 
 export const hardSkills = [
