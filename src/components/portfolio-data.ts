@@ -159,6 +159,11 @@ export const certificaciones = [
     detalle: "Certificación en fundamentos de IA en Oracle Cloud Infrastructure (agosto 2026).",
   },
   {
+    entidad: "Oracle University",
+    titulo: "Oracle Cloud Infrastructure Foundations Associate (1Z0-1085-26)",
+    detalle: "Certificación en fundamentos de Oracle Cloud Infrastructure (agosto 2026).",
+  },
+  {
     entidad: "Google Skills",
     titulo: "Generative AI Leader",
     detalle:
