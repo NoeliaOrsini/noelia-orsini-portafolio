@@ -231,7 +231,10 @@ function Index() {
                     rel="noopener noreferrer"
                     className="mt-7 inline-flex items-center justify-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm font-medium transition-colors hover:border-teal hover:text-teal"
                   >
-                    Ver repositorio <ArrowUpRight className="size-4" />
+                    {p.titulo === "Aplicaciones Interactivas (JavaScript / HTML / CSS)"
+                      ? "Ver repositorios"
+                      : "Ver repositorio"}{" "}
+                    <ArrowUpRight className="size-4" />
                   </a>
                 </article>
               ))}
