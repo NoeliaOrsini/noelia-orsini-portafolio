@@ -155,7 +155,7 @@ export const certificaciones = [
   },
   {
     entidad: "Oracle University",
-    titulo: "Oracle Cloud Infrastructure Certified AI Foundations Associate 2026",
+    titulo: "Oracle Cloud Infrastructure AI Foundations Associate (1Z0-1122-26)",
     detalle: "Certificación en fundamentos de IA en Oracle Cloud Infrastructure (agosto 2026).",
   },
   {
